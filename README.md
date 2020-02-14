@@ -30,13 +30,3 @@ The header should be a fixed position element. Its width will be 220px and its h
 
 Once you've marked up your entire project, try to hide the verticle menu on smaller screens! 
 
-Useful Resources
-In order to implement certain features, you may want to embed widgets or other tools - or take a stab at using an API a little ahead of time! Here are a few that you may wish to include. Remember even when using widgets to display content, you still have the freedom to style the content any way you would like to by utilizing the appropriate class names. 
-
-Twitter Widget - publish.twitter.com
-Google Calendar 
-Weatherwidget.io
-darksky.net
-api.nasa.gov
-developer.github.com - https://developer.github.com/v3/repos/
-api.slack.com
