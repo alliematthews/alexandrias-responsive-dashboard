@@ -1,0 +1,172 @@
+body {
+  background-color: rgba(252, 233, 233, 0.712);
+  display: flex;
+}
+
+/* Cant Get This to Respond! I've tried so many different things :( */
+@media only screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Grid Items */
+.container {
+  height: 90vh;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  font-family: 'Sacramento', cursive;
+}
+
+
+.grid {
+  background: url('./Images/technologygray.jpg');
+  color: rgb(247, 9, 9);
+  font-size: 1rem;
+  text-align: center;
+  padding: 3rem;
+  border: 1px solid;
+}
+
+.cell-1 {
+  display: inline-flex;
+  grid-column: 2/4;
+  width: 1215px;
+  color: rgb(247, 9, 9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 35px;
+  opacity: 90%;
+  padding: auto 0;
+
+
+}
+.cell-2 {
+  display: block;
+  flex-wrap: nowrap;
+  background: lightgray;
+  font-family: 'Montserrat', sans-serif;
+  grid-row: 1/4;
+  width: 220px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+}
+.cell-2 img {
+  border-radius: 50px;
+}
+.cell-3 {
+  display: block;
+  background: lightgray;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  border-color: rgb(247, 9, 9);
+  
+}
+.cell-4 {
+  display: inline-block;
+  text-align: left;
+  justify-content: space-evenly;
+  background: lightgrey;
+  width: 550px;
+}
+
+.cell-5 {
+  background-image: url('./Images/livingroom1.jpg');
+  background: lightgrey;
+  color: rgb(247, 9, 9);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  border-color: rgb(247, 9, 9);
+  height: 650px;
+  width: 550px;
+  
+}
+
+.cell-6 {
+  background: lightgrey;
+  height:650px;
+}
+figure {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+
+  
+}
+figcaption {
+  width: 50px;
+}
+.hometext-1 {
+  margin-top: 10%;
+  margin-left: -40%;
+  width: 100%;
+}
+.hometext-2 {
+  margin-top: 10%;
+  margin-left: -25%;
+  width: 100%;
+}
+.hometext-3 {
+  margin-top: 10%;
+  margin-left: -1%;
+  width: 100%;
+}
+.hometext-4 {
+  margin-top: 10%;
+  margin-left: -1%;
+  width: 100%;
+}
+.clock {
+  font-family: 'Montserrat', sans-serif;
+  color:black;
+}
+.contact{
+  color: black;
+}
+
+
+/*List for Navigation Bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: lightgray;
+}
+
+a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.active{
+  background-color: goldenrod;
+  color: white;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: rgb(247, 9, 9);
+  color: white;
+  width: 100%;
+}
+
+
+/*Slideshow*/
+.fling-minislide {width:350px; height:350px; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
